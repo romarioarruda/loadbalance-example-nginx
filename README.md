@@ -13,8 +13,8 @@ $ vim /etc/nginx/conf.d/default.conf
 
 ```
 upstream nodes {
-    server node1;
-    server node2;
+    server mogrovejo;
+    server altman;
 }
 
 server {
