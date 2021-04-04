@@ -1,18 +1,21 @@
+### Up services with Docker
 
-on file:
+```
+$ docker-compose up -d
+```
+
+### on file:
 ```
 $ vim /etc/nginx/conf.d/default.conf
 ```
 
-config load_balance:
+### config load balance and reverse proxy:
 
 ```
 upstream nodes {
     server node1;
     server node2;
 }
-
-config server
 
 server {
     listen      80;
