@@ -1,4 +1,4 @@
-### Up services with Docker
+### up examples services with Docker
 
 ```
 $ docker-compose up -d
@@ -23,7 +23,7 @@ server {
     server_name localhost;
 
     location / {
-        proxy_pass http://nodes; # using loadbalance
+        proxy_pass http://nodes;
         proxy_set_header X-Real-IP $remote_addr;
     }
 
